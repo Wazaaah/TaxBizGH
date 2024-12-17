@@ -135,10 +135,10 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="login.php">Login</a>
@@ -150,14 +150,14 @@ session_start();
 <div class="wrapper">
     <div class="container">
         <div class="image-section">
-            <img src="../assets/images/register.jpg" alt="TaxBizGh">
+            <img src="assets/images/register.jpg" alt="TaxBizGh">
         </div>
         <div class="register-section">
             <h1>Create Account</h1>
             <div id="error-message" class="alert alert-danger d-none"></div>
             <div id="success-message" class="alert alert-success d-none"></div>
 
-            <form id="registerForm" method="POST" action="../handlers/register_handler.php" novalidate>
+            <form id="registerForm" method="POST" action="handlers/register_handler.php" novalidate>
                 <h4>Personal Information</h4>
                 <div class="form-row">
                     <div class="form-group col-md-6">

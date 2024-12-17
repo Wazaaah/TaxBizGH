@@ -16,7 +16,7 @@ if (isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - TaxBizGh</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,10 +24,10 @@ if (isset($_SESSION['user_id'])) {
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="register.php">Sign Up</a>
@@ -39,7 +39,7 @@ if (isset($_SESSION['user_id'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6 image">
-                <img src="../assets/images/login.jpg" alt="TaxBizGh" class="img-fluid">
+                <img src="assets/images/login.jpg" alt="TaxBizGh" class="img-fluid">
             </div>
             <div class="col-md-6 login">
                 <h1>Login</h1>

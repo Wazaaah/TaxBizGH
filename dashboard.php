@@ -173,7 +173,7 @@ $totals = $stmt->get_result()->fetch_assoc();
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a href="profile.php">
-                    <img src="../assets/images/profile.png" alt="Profile" class="rounded-circle" width="40">
+                    <img src="assets/images/profile.png" alt="Profile" class="rounded-circle" width="40">
                 </a>
             </li>
         </ul>
@@ -202,7 +202,7 @@ $totals = $stmt->get_result()->fetch_assoc();
             <a class="nav-link" href="support.php">
                 <i class="fas fa-question-circle"></i> Support
             </a>
-            <a class="nav-link" href="../handlers/logout.php">
+            <a class="nav-link" href="handlers/logout.php">
                 <i class="fas fa-sign-out-alt"></i> Logout
             </a>
         </div>
