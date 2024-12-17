@@ -147,7 +147,7 @@ $calculation = $result->fetch_assoc();
 
     <div class="container">
         <div class="header">
-            <img src="assets/images/logo.png" alt="TaxBizGh Logo" class="logo">
+            <img src="../assets/images/logo.png" alt="TaxBizGh Logo" class="logo">
             <h1>Tax Calculation Report</h1>
         </div>
 
