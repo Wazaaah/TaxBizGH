@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - TaxBizGh</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/profile.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">TaxBizGh</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="logout.html">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- Profile Picture Section -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Profile Picture</div>
+        <div class="card-body text-center">
+          <img src="assets/images/profile.png" class="img-fluid rounded-circle mb-3" alt="Profile Picture">
+          <form>
+            <div class="form-group">
+              <input type="file" class="form-control-file" id="profilePicture">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Update Picture</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal and Company Information Section -->
+    <div class="col-md-8">
+      <!-- Personal Information -->
+      <div class="card">
+        <div class="card-header">Personal Information</div>
+        <div class="card-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" value="John">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="Doe">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" value="john.doe@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Phone Number" value="123-456-7890">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Update Information</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Company Information -->
+      <div class="card mt-4">
+        <div class="card-header">Company Information</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="companyName">Company Name</label>
+              <input type="text" class="form-control" id="companyName" placeholder="Company Name" value="TaxBizGh Ltd.">
+            </div>
+            <div class="form-group">
+              <label for="companyAddress">Company Address</label>
+              <input type="text" class="form-control" id="companyAddress" placeholder="Company Address" value="123 Business St, Accra">
+            </div>
+            <div class="form-group">
+              <label for="companyPhone">Company Phone Number</label>
+              <input type="tel" class="form-control" id="companyPhone" placeholder="Company Phone Number" value="098-765-4321">
+            </div>
+            <div class="form-group">
+              <label for="companyDescription">Company Description</label>
+              <textarea class="form-control" id="companyDescription" rows="4" placeholder="Enter a description for your company">Welcome to TaxBizGh! We are a premier financial services company dedicated to simplifying tax management for Ghanaian businesses of all sizes...</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Update Company Info</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

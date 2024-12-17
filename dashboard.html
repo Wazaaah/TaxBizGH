@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxBizGh Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TaxBizGh</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="profile.html">
+                    <img src="profile.png" alt="Profile Picture" class="rounded-circle" width="40">
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <!-- KPI Cards Row -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card text-center kpi-card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Revenue</h5>
+                    <p class="card-text kpi-value" id="total-revenue">$0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center kpi-card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Expenditure</h5>
+                    <p class="card-text kpi-value" id="total-expenditure">$0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center kpi-card">
+                <div class="card-body">
+                    <h5 class="card-title">Net Profit</h5>
+                    <p class="card-text kpi-value" id="net-profit">$0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Financial Summary and Trends -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Financial Summary</h2>
+            <canvas id="financial-summary-chart"></canvas>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Tax Trends</h2>
+            <canvas id="tax-trends-chart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <h2>Expenditure Trends</h2>
+            <canvas id="expenditure-trends-chart"></canvas>
+        </div>
+    </div>
+
+    <!-- Tips and News -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Tips and Tricks</h2>
+            <ul id="tips-tricks"></ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Recent News and Updates</h2>
+            <ul id="news-updates"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

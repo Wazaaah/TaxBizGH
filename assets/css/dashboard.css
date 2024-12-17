@@ -1,0 +1,236 @@
+/* assets/css/dashboard.css */
+
+:root {
+    --primary-color: #1A5F7A;
+    --secondary-color: #2980B9;
+    --accent-color: #3498DB;
+    --success-color: #27AE60;
+    --warning-color: #F39C12;
+    --danger-color: #E74C3C;
+    --light-bg: #F8F9FA;
+    --dark-text: #2C3E50;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #ECF0F1;
+    color: var(--dark-text);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Welcome Card */
+.card.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    border: none;
+    box-shadow: var(--card-shadow);
+}
+
+/* KPI Cards */
+.kpi-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: var(--card-shadow);
+    height: 100%;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+}
+
+.kpi-card .card-body {
+    padding: 1.5rem;
+}
+
+.kpi-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Recent Calculations Table */
+.table-responsive {
+    border-radius: 0.25rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: var(--light-bg);
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+/* Quick Actions */
+.list-group-item-action {
+    transition: all 0.3s ease;
+}
+
+.list-group-item-action:hover {
+    background-color: var(--light-bg);
+    padding-left: 1.5rem;
+    color: var(--primary-color);
+}
+
+.list-group-item i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Tips Widget */
+.tip-slider {
+    padding: 1rem;
+}
+
+.tip-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.tip-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Empty State */
+.text-center.py-4 {
+    background-color: var(--light-bg);
+    border-radius: 0.25rem;
+    padding: 2rem !important;
+}
+
+.text-center.py-4 i {
+    color: var(--primary-color);
+}
+
+/* Action Buttons */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.2rem;
+}
+
+.btn-info {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .kpi-card {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional styles for calculation view */
+.table-bordered th {
+    background-color: var(--light-bg);
+    font-weight: 600;
+}
+
+.card-header h4 {
+    color: var(--primary-color);
+}
+
+.card-footer {
+    background-color: var(--light-bg);
+}
+
+
+.navbar {
+    position: fixed;
+    background-color: #2c3e50;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.sidebar {
+    background-color: white;
+    height: calc(100vh - 56px);
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    width: 250px;
+    padding-top: 50px;
+}
+
+
+.nav-link {
+    color: #2c3e50;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.nav-link i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.tips-news {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tips-news h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.tips-news ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.tips-news ul li:hover {
+    background-color: #f8f9fa;
+}
+
+.tips-news ul li:last-child {
+    border-bottom: none;
+}

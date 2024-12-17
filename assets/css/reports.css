@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ECF0F1; /* Accent color */
+    color: #2C3E50; /* Primary text color */
+    margin: 0;
+}
+
+header {
+    background-color: #2C3E50; /* Primary color */
+    color: #ECF0F1; /* Accent color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ECF0F1; /* Accent color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.filter-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.filter-bar input {
+    padding: 10px;
+    width: 70%;
+    max-width: 500px;
+    border: 1px solid #34495E;
+    border-radius: 5px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #34495E; /* Tertiary color */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #34495E; /* Tertiary color */
+    color: #ECF0F1; /* Accent color */
+}
+
+button {
+    padding: 7px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.view-btn {
+    background-color: #2980B9; /* Secondary color */
+    color: #ECF0F1; /* Accent color */
+}
+
+.download-btn {
+    background-color: #34495E; /* Tertiary color */
+    color: #ECF0F1; /* Accent color */
+}
+
+.edit-btn {
+    background-color: #27AE60; /* Green for edit */
+    color: #ECF0F1; /* Accent color */
+}
+
+.delete-btn {
+    background-color: #E74C3C; /* Red for delete */
+    color: #ECF0F1; /* Accent color */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #ECF0F1; /* Accent color */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #34495E; /* Tertiary color */
+    border-radius: 8px;
+    width: 50%; /* Centered modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    color: #E74C3C;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #2C3E50; /* Primary color */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ECF0F1; /* Light Gray */
+}
+
+.navbar {
+    background-color: #2C3E50; /* Dark Blue */
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #2980B9; /* Bright Blue */
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #2980B9; /* Bright Blue */
+    border-color: #2980B9;
+}
+
+.img-fluid {
+    max-width: 150px;
+}
+
+.form-group input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
